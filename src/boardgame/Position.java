@@ -32,6 +32,6 @@ public class Position {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return row + "," +column ;
+		return row + "|" +column ;
 	}
 }
