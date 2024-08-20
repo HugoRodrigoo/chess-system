@@ -186,13 +186,13 @@ public class ChessMatch {
 				
 				Position pawnPosition;
 				if (p.getColor() == Color.WHITE) {
-					pawnPosition = new Position(target.getRow() + 1 , target.getColumn());
+					pawnPosition = new Position(3 , target.getColumn());
 				}else {
-					pawnPosition = new Position(target.getRow() - 1 , target.getColumn());
+					pawnPosition = new Position(4 , target.getColumn());
 				}
-				capturedPiece = board.removePiece(pawnPosition);
-				capturedPieces.add(capturedPiece);
-				picesOnTheBoard.remove(capturedPiece);
+				board.placePiace(pawn, pawnPosition);
+				
+				
 			}
 		}
 	}
